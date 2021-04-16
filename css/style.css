@@ -1,0 +1,610 @@
+*{
+    box-sizing: border-box;
+    overflow: hidden auto;
+}
+body{
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+.nav-container{
+    background-color: pink;
+    color: white;
+}
+
+.nav-ul {
+    margin: 0px;
+    list-style-type: none;
+    padding: 0px;
+    font-size: 0px; /*prevent space being reserved when converted to inline*/
+}
+
+.nav-short {
+
+    margin: 0px;
+    list-style-type: none;
+    padding: 0px;
+    font-size: 0px; 
+}
+.nav-short li{
+    padding: 16px;
+    text-align: center;
+    font-size: 1.4rem;
+    border-bottom: 1px solid black;
+    transition: background-color 0.4s;
+}
+#site-name{
+    display: block;
+    margin-left: 460px;
+    font: 1.3rem;
+    font-weight: bolder;
+    color:teal;
+}
+.visible{
+    display: block;
+}
+.invisible{
+    display: none;
+}
+.nav-ul li{
+    padding: 16px;
+    text-align: center;
+    font-size: 1.2rem;
+    border-bottom: 1px solid black;
+    transition: background-color 0.4s;
+}
+
+.nav-ul li:hover {
+    background-color: white;
+    color:  rgb(29, 30, 100);
+    cursor: pointer;
+}
+
+.main-container{
+    background-color: #f3f3f4;
+
+}
+
+.img-container{
+    background-image: url('../images/pretty-lady.jpg');
+    background-position: center center; 
+    background-size: cover; 
+    padding-top: 200px;
+    padding-bottom: 200px; 
+    
+}
+
+.img-text{
+    text-align: center;
+    color: white;
+    font-size: 3.5rem;
+}
+
+/* jjj */
+
+.intro-text{
+    color: grey;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+
+
+@media screen and (min-width: 700px){ /*u need a mininum of 700 to have this kind of styling*/
+    .nav ul{
+        text-align: right;
+    }
+    .nav-ul li{
+        display: inline-block;
+        border-bottom: 0px;
+    }
+
+    @media screen and (min-width: 900px){ /*u need a mininum of 700 to have this kind of styling*/
+
+        #site-name{
+            display: none;
+        }
+    }
+
+
+
+
+
+    /* .form-div{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #input_1_7{
+        width: 90%;
+    }
+    #input_1_8{
+        width: 10%;
+    } */
+
+    @media screen and (min-width: 946px){
+        .services{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        } 
+        #site-name{
+            display: none;
+        }
+    }
+
+
+}
+
+
+#gender{
+  padding: 10px;
+  border: none;
+  font-size: 1.4rem;
+}
+input{
+  padding:10px;
+  border: none;
+  font-size: 1.4rem;
+}
+#searchBtn{
+  position: relative;
+  left: 20px;
+  padding: 10px 40px;
+  background-color: teal;
+  color: white;
+  font-size: 1.4rem;
+  border: none;
+  cursor: pointer;
+}
+#searchBtn:hover{
+    background-color: rgb(7, 31, 31);
+    color: white;
+}
+
+
+
+.row {
+  margin: 10px 20px;
+}
+
+#results {
+  margin: 30px 20px 10px 0px;
+}
+
+.person-row {
+  margin: 10px 0px;
+  padding: 10px;
+  position: relative;
+  left: 80px;
+  width: 80%;
+
+}
+
+.person-row img {
+  /* float: left; */
+  margin-right: 20px;
+}
+
+.personal-info {
+  /* float: left; */
+  
+
+}
+
+.person-row > button {
+ /* float: right;  */
+}
+
+#results{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.person-row{
+    /* background-color: white; */
+}
+
+.person-info{
+    position: relative;
+    left: 60px;
+    font-size: 1.1rem;
+    font-weight: bolder;
+}
+.img-class{
+    position: relative;
+    left: 60px;
+}
+.add-button{
+    position: relative;
+    left: 60px; 
+    padding: 8px 10px;
+    background-color: teal;
+    font-size: 1.1rem;
+    color: #fff;
+    cursor: pointer;
+}
+.add-button:hover{
+    background-color: rgb(9, 41, 41);
+    color: #fff; 
+}
+
+
+/* footer */
+
+/* footer */
+.site-footer {
+    background-color: #26272b;
+    padding: 45px 0 20px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #737373;
+  }
+  .site-footer hr {
+    border-top-color: #bbb;
+    opacity: 0.5;
+  }
+  .site-footer hr.small {
+    margin: 20px 0;
+  }
+  .site-footer h6 {
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 5px;
+    letter-spacing: 2px;
+  }
+  .site-footer a {
+    color: #737373;
+  }
+  .site-footer a:hover {
+    color: purple;
+    text-decoration: none;
+  }
+  .footer-links {
+    padding-left: 0;
+    list-style: none;
+  }
+  .footer-links li {
+    display: block;
+  }
+  .footer-links a {
+    color: #737373;
+  }
+  .footer-links a:active,
+  .footer-links a:focus,
+  .footer-links a:hover {
+    color: purple;
+    text-decoration: none;
+  }
+  .footer-links.inline li {
+    display: inline-block;
+  }
+  .site-footer .social-icons {
+    text-align: right;
+  }
+  .site-footer .social-icons a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 6px;
+    margin-right: 0;
+    border-radius: 100%;
+    background-color: #33353d;
+  }
+  .copyright-text {
+    margin: 0;
+  }
+  @media (max-width: 991px) {
+    .site-footer [class^="col-"] {
+      margin-bottom: 30px;
+    }
+  }
+  @media (max-width: 767px) {
+    .site-footer {
+      padding-bottom: 0;
+    }
+    .site-footer .copyright-text,
+    .site-footer .social-icons {
+      text-align: center;
+    }
+  }
+  .social-icons {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+  }
+  .social-icons li {
+    display: inline-block;
+    margin-bottom: 4px;
+  }
+  .social-icons li.title {
+    margin-right: 15px;
+    text-transform: uppercase;
+    color: #96a2b2;
+    font-weight: 700;
+    font-size: 13px;
+  }
+  .social-icons a {
+    background-color: #eceeef;
+    color: #818a91;
+    font-size: 16px;
+    display: inline-block;
+    line-height: 44px;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    margin-right: 8px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+  }
+  .social-icons a:active,
+  .social-icons a:focus,
+  .social-icons a:hover {
+    color: #fff;
+    background-color: purple;
+  }
+  .social-icons.size-sm a {
+    line-height: 34px;
+    height: 34px;
+    width: 34px;
+    font-size: 14px;
+  }
+  .social-icons a.facebook:hover {
+    background-color: purple;
+  }
+  .social-icons a.twitter:hover {
+    background-color: purple;
+  }
+  .social-icons a.linkedin:hover {
+    background-color: purple;
+  }
+  .social-icons a.dribbble:hover {
+    background-color: #ea4c89;
+  }
+  @media (max-width: 767px) {
+    .social-icons li.title {
+      display: block;
+      margin-right: 0;
+      font-weight: 600;
+    }
+  }
+
+  
+/* footer */
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+* {
+  font-family: Roboto;
+}
+
+section {
+  width: 100%;
+  display: inline-block;
+  background: #ccc;
+  height: 60vh;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.footer-distributed {
+  background-color: #292c2f;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: normal 16px sans-serif;
+  padding: 45px 50px;
+}
+
+.footer-distributed .footer-left p {
+  color: #8f9296;
+  font-size: 14px;
+  margin: 0;
+}
+/* Footer links */
+
+.footer-distributed p.footer-links {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0 0 10px;
+  padding: 0;
+  transition: ease 0.25s;
+}
+
+.footer-distributed p.footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+  transition: ease 0.25s;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "·";
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+.footer-distributed .footer-right {
+  float: right;
+  margin-top: 6px;
+  max-width: 180px;
+}
+
+.footer-distributed .footer-right a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-left: 3px;
+  transition: all 0.25s;
+}
+
+.footer-distributed .footer-right a:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+}
+
+.footer-distributed p.footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* Media Queries */
+
+@media (max-width: 600px) {
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-right {
+    text-align: center;
+  }
+  .footer-distributed .footer-right {
+    float: none;
+    margin: 0 auto 20px;
+  }
+  .footer-distributed .footer-left p.footer-links {
+    line-height: 1.8;
+  }
+}
+
+/* css of aj */
+/* Image animation */
+.psample {
+  border: solid 0px black;
+  justify-items: center;
+  margin: 16px;
+  width: 70%;
+}
+
+.borderAdd {
+  border: solid 3px grey;
+}
+
+.psample img {
+  position: relative;
+  max-width: 100%;
+  width: 80%;
+  /* height: 90px; */
+  justify-content: initial;
+  left: 9.5px;
+  margin: auto;
+  border: solid 0px black;
+}
+
+/* .mySlides {display: none} */
+img {
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+}
+
+/* Image animation */
+.zoom {
+  overflow: hidden;
+}
+
+.zoom img {
+  transition: transform 0.5s ease;
+}
+
+.zoom:hover img {
+  transform: scale(1.9);
+}
+
+  
+  
